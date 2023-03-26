@@ -38,11 +38,12 @@ if __name__ == "__main__":
     #começa a contagem de tempo da celula
     start = time.time()
     #quantidade de numeros que iremos testar, passado pela linha de comando ao programa
-    numbers = sys.argv[1]
+    lower_limit = sys.argv[1]
+    higher_limit = sys.argv[2]
     #lista que abriga as threads criadas
     threads = []
     #loop que inicializa as threads, uma para cada numero entre 0 e 9
-    for i in range(0, int(numbers)):
+    for i in range(int(lower_limit), int(higher_limit)):
         #usamos a funcao Thread da biblioteca threading, 
         #passando para ela o nome da funcao alvo que a thread criada deve executar(target=threading_func).
         #Como a funcao alvo recebe argumentos de entrada temos que passar para este metodo os argumentos que seram usados

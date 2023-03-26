@@ -37,11 +37,12 @@ if __name__ == '__main__':
     #comecamos a contagem do tempo de execucao da celula 
     starttime = time.time()
     #quantidade de numeros que iremos testar, passado pela linha de comando ao programa
-    numbers = sys.argv[1]
-    #criamos uma lista para abrigar os processos criados
+    lower_limit = sys.argv[1]
+    higher_limit = sys.argv[2]
+    #criamos uma lista para abrigar os processos criados[]
     processes = []
     #criamos 10 processos neste loop
-    for i in range(0, int(numbers)):
+    for i in range(int(lower_limit), int(higher_limit)):
         #usamos a funcao Process da biblioteca multiprocessing, 
         #passando para ela o nome da funcao alvo que o processo criado deve executar(target=multiprocessing_func).
         #Como a funcao alvo recebe argumentos de entrada temos que passar para este metodo os argumentos que seram usados
