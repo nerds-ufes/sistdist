@@ -12,5 +12,5 @@ Todas essas células testam números indo de um limite inferior até um limite s
 Os outros dois arquivos, prime_process e prime_threads tem a resolução do mesmo problema, mas em formato de arquivo de programa python normal. Para executa-los é necessario passar ao programa, por linha de comando, os valores das variaveis lower_limit e higher_limit. Sendo o primeiro valor passado o lower_limit e o segundo o higher_limit. Exemplo de uso:
 
 ```
-python prime_process 0 10
+$python prime_process 0 10
 ```
