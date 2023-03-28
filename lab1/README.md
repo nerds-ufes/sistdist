@@ -14,3 +14,7 @@ Os outros dois arquivos, prime_process e prime_threads tem a resolução do mesm
 ```
 $python prime_process 0 10
 ```
+Para compilar a versão em C, faça da seguinte forma:
+
+```
+$gcc primes_multi.c -o primes_multi -lpthread
