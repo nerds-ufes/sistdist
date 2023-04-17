@@ -33,5 +33,6 @@ int main( int argc, char *argv[]) {
     printf("%d + %d = %d\n",x,y, add(x,y));
     printf("%d - %d = %d\n",x,y, sub(x,y));
     return(0);
+    
 } /* fim main */
 
