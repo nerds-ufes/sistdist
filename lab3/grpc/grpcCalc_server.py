@@ -25,7 +25,7 @@ class CalculatorServicer(grpcCalc_pb2_grpc.apiServicer):
         return grpcCalc_pb2.result(num=(request.numOne * request.numTwo))
 
     def div(self, request, context):
-        return grpcCalc_pb2.result(num=(request.numOne / request.numTwo))
+        return grpcCalc_pb2.result(num=(request.numOne // request.numTwo))
 
 
 if __name__ == '__main__':
