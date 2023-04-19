@@ -1,0 +1,2 @@
+grpcio-tools>=1.51.3
+pybreaker>=1.0.1
