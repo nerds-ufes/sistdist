@@ -19,7 +19,7 @@ message transactionId {
 message challengeArgs{
     int32 transactionId = 1;
     int32 clientId = 2;
-    int32 seed = 3; 
+    string challenge = 3; 
 }
 
 message void {
